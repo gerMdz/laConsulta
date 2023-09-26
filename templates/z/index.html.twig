@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{#{% block title %}Hello ZController!{% endblock %}#}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <div class="dropdown" style="margin-right: 10px">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+        Idioma
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({_locale:'es'})) }}">es_AR</a> </li>
+
+        </ul>
+    </div>
+
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/mnt/335bbff1-20ce-407d-bd1b-11294e2e0083/home/gerardo/Tutoriales/Youtube/Tanya/tanya_translator/src/Controller/ZController.php'|file_link(0) }}">src/Controller/ZController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/mnt/335bbff1-20ce-407d-bd1b-11294e2e0083/home/gerardo/Tutoriales/Youtube/Tanya/tanya_translator/templates/z/index.html.twig'|file_link(0) }}">templates/z/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}
