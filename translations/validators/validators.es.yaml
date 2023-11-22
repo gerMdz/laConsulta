@@ -1,0 +1,7 @@
+form:
+  messages:
+    email: 'Por favor ingrese un email válido'
+    password: 'Por favor ingrese una contraseña'
+    password_min: 'La contraseña debería tener al menos {{ limit }} caracteres'
+    agree_terms: 'Por favor acepte los términos'
+

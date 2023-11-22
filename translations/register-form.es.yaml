@@ -1,0 +1,9 @@
+form:
+  label:
+    email: 'Email'
+    password: 'Contraseña'
+    agree_terms: 'Acepta términos'
+
+  placeholder:
+    email: 'Ingrese su email'
+    password: 'Elija una contraseña segura'
