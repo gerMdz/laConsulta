@@ -16,4 +16,22 @@ class ZController extends AbstractController
             'controller_name' => 'ZController',
         ]);
     }
+
+    #[Route('/main', name: 'main')]
+    public function main(): Response
+    {
+        return $this->render('z/main.html.twig');
+    }
+
+    #[Route('/main-xml', name: 'main_xml')]
+    public function mainXml(): Response
+    {
+        $xml = $this->render('z/test.xml.twig');
+
+        $response = new Response($xml);
+        $response->headers->set('Content-Type', 'xml');
+
+        return $response;
+
+    }
 }
